@@ -1,0 +1,20 @@
+body {
+    background-color: #6495ed9e;
+    text-align: center;
+    cursor: url("image-path.png"), auto;
+}
+
+h1 {
+    font-family
+}
+
+h3 {
+    color: #496dad;
+}
+
+#bund {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
