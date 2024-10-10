@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Gowun_Batang";
-    src: url("Fonts/Gowun_Batang/GowunBatang-Regular.ttf");
+    src: url("Gowun_Batang/GowunBatang-Regular.ttf");
 }
 
 body {
     margin-top: 30px;
     margin-bottom: 30px;
-    cursor: url("Images/sun-icon-2048x2048-q9y4y4t6-3.cur"), default;
+    cursor: url("liked/sun-icon-2048x2048-q9y4y4t6-3.cur"), default;
     font-family: "Gowun_Batang", serif;
 }
 a {
