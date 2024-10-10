@@ -1,20 +1,342 @@
+@font-face {
+    font-family: "Gowun_Batang";
+    src: url("Fonts/Gowun_Batang/GowunBatang-Regular.ttf");
+}
+
 body {
-    background-color: #6495ed9e;
-    text-align: center;
-    cursor: url("image-path.png"), auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: url("Images/sun-icon-2048x2048-q9y4y4t6-3.cur"), default;
+    font-family: "Gowun_Batang", serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-h1 {
-    font-family
+/* Det her burde fjerne scrollbar men det virker ikke ;-;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-h3 {
+body::-webkit-scrollbar {
+    display: none;
+}*/
+
+/* SCROLL FEATURES */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* SECTION 0 - FRONT PAGE */
+section {
+    position: relative;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+}
+
+#section0 {
+    background-color: #9ebdf3;
+}
+#gridtop {
     color: #496dad;
+    text-align: center;
+    height: 15vh;
+    padding-top: 4vh;
 }
 
-#bund {
+#gridmiddle {
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 70vh;
+    padding-top: 25vh;
+    margin-top: auto;
+}
+#title {
+    font-size: 90px;
+    color: #26354f;
+}
+
+#undertitle {
+    text-align: end;
+    color: #384e75;
+    font-size: 40px;
+}
+
+#s0-next {
+    text-align: end;
+    color: floralwhite;
+    font-size: 30px;
+}
+
+#gridbottom {
+    color: #496dad;
+    height: 15vh;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 5vh;
+}
+
+/* SECTION 1 */
+#section1 {
+    background-color: #2e4482;
+}
+
+#s1-title-1 {
+    position: absolute;
+    text-align: end;
+    width: 20%;
+    height: 50%;
+    left: 20%;
+    top: 0;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 70px;
+    font-size: 85px;
+    color: #cbd6f7;
+}
+
+#s1-title-2 {
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    left: 60%;
+    top: 0;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 70px;
+    font-size: 85px;
+    color: #cbd6f7;
+}
+
+#s1-next {
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    left: 40%;
+    bottom: 0;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 50px;
+    color: #ef9158;
+}
+
+#s1-arrow {
+    font-size: 165px;
+}
+#uni1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#uni2 {
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+}
+
+#uni3 {
+    position: absolute;
+    left: 40%;
+    top: 0;
+}
+
+#uni4 {
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+}
+#uni5 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* SECTION 2 */
+#section2 {
+    background-color: #87ceeb;
+}
+
+#s2-title-1 {
+    position: absolute;
+    height: 33%;
+    width: 66%;
+    right: 0;
+    top: 0;
+    text-align: center;
+    padding-right: 20px;
+    font-size: 100px;
+    color: #0422eb;
+}
+
+#s2-title-2 {
+    color: #8f7dae;
+    position: absolute;
+    height: 33%;
+    width: 66%;
+    left: 0;
+    top: 33%;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 70px;
+}
+
+#s2-next {
+    position: absolute;
+    height: 33%;
+    width: 66%;
+    bottom: 0;
+    right: 0;
+    text-align: end;
+    padding-right: 50px;
+    padding-top: 50px;
+    font-size: 70px;
+    color: #fadadd;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+#s2-arrow {
     position: absolute;
     bottom: 0;
+    right: 40%;
+}
+
+#blaa {
+    position: absolute;
     left: 0;
-    width: 100%;
+    top: 0;
+}
+#purple {
+    position: absolute;
+    top: 33%;
+    right: 0;
+}
+
+#swirl {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* SECTION 3 */
+#section3 {
+    background-color: #ebebc7;
+}
+
+#s3-title-1 {
+    font-size: 70px;
+    color: #f5750f;
+    position: absolute;
+    height: 50%;
+    width: 25%;
+    left: 0;
+    bottom: 0;
+    text-align: right;
+    padding-right: 2vh;
+}
+#s3-title-2 {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    font-size: xx-large;
+    color: #dbb901;
+}
+#frugt1 {
+    position: absolute;
+    top: 0;
+    left: 0%;
+}
+#frugt2 {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+#frugt3 {
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+#frugt4 {
+    position: absolute;
+    top: 0;
+    right: 20%;
+}
+#frugt5 {
+    position: absolute;
+    top: 0;
+    right: 0%;
+}
+
+#s3-next {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 5vh;
+    color: #515081;
+}
+
+/* SECTION 4 */
+#section4 {
+    background-color: #b56f76;
+    padding-left: 24%;
+    padding-right: 24%;
+}
+
+#s4-title {
+    font-size: 70px;
+    text-align: center;
+    padding-top: 5vh;
+    color: #c9b5b8;
+}
+#s4-body {
+    text-align: justify;
+    font-size: larger;
+    color: #4d2f32;
+}
+
+.hover-text {
+    text-decoration-line: underline;
+}
+
+.hover-image {
+    display: none;
+}
+
+span:hover + .hover-image {
+    display: block;
+    position: absolute;
+}
+
+#s4-end {
+    text-align: center;
+    color: #4d2f32;
 }

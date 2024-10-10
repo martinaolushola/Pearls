@@ -1,50 +1,147 @@
 <!doctype html>
 <html lang="da">
     <head>
-        <link rel="stylesheet" href="stylesheet.css" />
+        <link rel="stylesheet" href="perler-stylesheet.css" />
+        <script src="perler.js"></script>
         <link rel="icon" type="image/x-icon" href="/Images/heart-on-fire_2764-fe0f-200d-1f525.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
-            rel="stylesheet" />
         <meta charset="UTF-8" />
         <title>perler</title>
     </head>
     <body>
-        <h3>
-            pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
-            <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
-            <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+        <!-- FORSIDE -->
+        <section id="section0">
+            <div class="gridcontainer">
+                <div class="griditem" id="gridtop">
+                    <b>
+                        pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <br />
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i>
+                    </b>
+                </div>
+                <div class="griditem" id="gridmiddle">
+                    <h1 id="title">Digital udstilling</h1>
+                    <h2 id="undertitle">glasperler lavet med &lt;3 <br /></h2>
+                    <p id="s0-next"><a href="#section1">start&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</a></p>
+                </div>
+                <div class="griditem" id="gridbottom">
+                    <span id="bund">
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i>
+                        <br />
+                        pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                        <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEKTION 1 -->
+        <section id="section1">
+            <div id="s1-title-1"><h1>univ</h1></div>
+            <div id="s1-title-2"><h1>erset</h1></div>
+
+            <img src="Images/the-pearls/liked/pink-smoke.aften.jpeg" id="uni1" width="20%" height="50%" />
+            <img
+                src="Images/the-pearls/liked/galaxy-1.jpeg"
+                id="uni2"
+                width="20%"
+                height="50%"
+                onmouseover="uni2other(this)"
+                onmouseout="uni2normal(this)" />
+            <img src="Images/the-pearls/liked/lilla-aften.jpeg" id="uni3" width="20%" height="50%" />
+            <img
+                src="Images/the-pearls/liked/planets-2.jpeg"
+                id="uni4"
+                width="20%"
+                height="50%"
+                onmouseover="uni4other(this)"
+                onmouseout="uni4normal(this)" />
+            <img src="Images/the-pearls/liked/pink-2.jpeg" id="uni5" width="20%" height="50%" />
+
+            <div id="s1-next"><a href="#section2">⟬næste⟭</a><br /><span id="s1-arrow">↯</span></div>
+        </section>
+
+        <!-- SEKTION 2 -->
+        <section id="section2">
+            <div id="s2-title-1"><h1>himmelen</h1></div>
+            <div id="s2-title-2"><h1>og skyerne</h1></div>
+            <img src="Images/the-pearls/liked/blaa-himmel-dag-2.jpeg" id="blaa" height="33%" />
+            <img src="Images/the-pearls/liked/purple-sky-1.jpeg" id="purple" height="33%" />
+            <img src="Images/the-pearls/liked/blue-swirl-1.jpeg" id="swirl" height="33%" />
+
+            <div id="s2-next">
+                <img src="Images/4274640.png" id="s2-arrow" width="175px" /><a href="#section3">næste</a> &lt;3
+            </div>
+        </section>
+
+        <!-- SEKTION 3 -->
+        <section id="section3">
+            <div id="s3-title-1"><h1>frugt &amp; grønt</h1></div>
+            <div id="s3-title-2"><h2>(og gult)</h2></div>
+            <img src="Images/the-pearls/liked/jordbaer-dag.jpeg" id="frugt1" width="20%" />
+            <img src="Images/the-pearls/liked/citroner-aften-1.jpeg" id="frugt2" width="50%" />
+            <img src="Images/the-pearls/liked/green-red-aften-2.jpeg" id="frugt3" width="20%" />
+            <img src="Images/the-pearls/liked/groen-stjerne-aften-1.jpeg" id="frugt4" width="20%" />
+            <img src="Images/the-pearls/liked/yellow-dag.jpeg" id="frugt5" width="20%" />
+
+            <div id="s3-next">
+                <a href="#section4">➺næste➺<br />🍋‍🟩🍓🍋‍</a>
+            </div>
+        </section>
+
+        <!-- SEKTION 4 -->
+        <section id="section4">
+            <div id="s4-title"><h1>information</h1></div>
             <br />
-            <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
-            <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
-            <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i>
-        </h3>
-        <br />
-        <h1>min samling af glasperler</h1>
-
-        <button name="btn1" type="button">(kategori 1)</button>
-        <button name="btn2" type="button">(kategori 2)</button>
-        <br />
-        <br />
-        <br />
-
-        <button name="btn3" type="button">(kategori 3)</button>
-        <button name="btn4" type="button">(kategori 4)</button>
-
-        <br />
-
-        <h3 id="bund">
-            <span style="font-weight: normal">
-                <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
-                <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
-                <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls </i> pearls
+            <br />
+            <p id="s4-body">
+                Denne hjemmeside udstiller et udvalg fra min samling af glasperler, som jeg selv har lavet, da jeg gik
+                på højskole i 2022.
                 <br />
-                pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
-                <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls
-                <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i> pearls <i>pearls</i>
-            </span>
-        </h3>
+                <br />
+                Man laver glasperler ved at varme
+                <span class="hover-text">glasstænger</span
+                ><img
+                    src="Images/striking-red-samples-for-effetre-and-reichenbach-500x357_orig.jpg"
+                    class="hover-image"
+                    width="30%" />
+                op over en
+                <span class="hover-text">brænder</span
+                ><img src="Images/Bead-Making-Header.webp" class="hover-image" width="52%" />, indtil glasset smelter i
+                enden. Herefter vikler man det smeltede glas rundt om en metalstang. Man kan bruge flere forskellige
+                farver på sine perler, og der findes en masse værktøjer, man kan bruge til at forme dem, så perlerne kan
+                få <span class="hover-text">mange forskellige udtryk</span
+                ><img src="Images/IMG_8526.JPEG" class="hover-image" width="30%" />.
+                <br />
+                <br />
+                Klik <a href="https://lex.dk/glas" target="_blank"><b>➺her</b></a> for at læse mere om glas og dens
+                kunsthistorie.
+                <br />
+                <br />
+                Hjemmesiden er lavet af Martina Olushola Adeogun Beck Andersen til workshoppen "Det poetiske internet"
+                på humanistisk-teknologisk bachelor på Roskilde Universitet &lt;3
+            </p>
+            <br />
+            <br />
+            <div id="s4-end">
+                <h2>
+                    <a href="https://johanne-aarup-hansen.github.io/Det_poetiske_internet_24/"
+                        >▶Tilbage til oversigt◀</a
+                    >
+                </h2>
+            </div>
+        </section>
+
+        <script src="perler.js"></script>
     </body>
 </html>
